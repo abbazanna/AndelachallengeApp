@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="profileText">MY PROFILE</string>
+    <string name="aboutText">ABOUT ALC</string>
+    <string name="welcomeText">Welcome to ALC 4</string>
+    <string name="aboutUrl">https://andela.com/alc/</string>
+    <string name="track_android">Track: Android</string>
+    <string name="myname">Abba Zanna</string>
+    <string name="country_nigeria">Country: Nigeria</string>
+    <string name="email_abbazanna_gmail_com">Email: abbazanna@gmail.com</string>
+    <string name="phone_2348169652410">Phone: 2348169652410</string>
+    <string name="slack_username_abbazanna">Slack Username: @abbazanna</string>
+</resources>
