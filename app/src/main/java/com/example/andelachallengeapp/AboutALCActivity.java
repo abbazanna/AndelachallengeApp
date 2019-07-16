@@ -7,7 +7,9 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class AboutALCActivity extends AppCompatActivity {
 
@@ -15,10 +17,15 @@ public class AboutALCActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_about_alc);
-        WebView aboutPage = (WebView)findViewById(R.id.aboutWebView);
 
+        WebView aboutPage = new WebView(this);
+        setContentView(aboutPage);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        WebSettings webSettings= aboutPage.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         aboutPage.loadUrl(getString(R.string.aboutUrl));
+        aboutPage.setWebViewClient(new WebViewClient());
+
 
     }
 }
