@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ALC 4 Phase 1</string>
     <string name="profileText">MY PROFILE</string>
+    <string name="profileActivityLabel">My Profile</string>
+    <string name="aboutALCActivityLabel">About ALC</string>
     <string name="aboutText">ABOUT ALC</string>
     <string name="welcomeText">Welcome to ALC 4</string>
     <string name="aboutUrl">https://andela.com/alc/</string>
