@@ -29,7 +29,7 @@ public class AboutALCActivity extends AppCompatActivity {
         aboutPage.setWebViewClient(new WebViewClient(){
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-                super.onReceivedSslError(view, handler, error);
+                
                 handler.proceed();
             }
         });
