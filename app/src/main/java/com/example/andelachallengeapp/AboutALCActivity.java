@@ -6,9 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.net.http.SslError;
 import android.os.Bundle;
-import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -26,13 +24,7 @@ public class AboutALCActivity extends AppCompatActivity {
         WebSettings webSettings= aboutPage.getSettings();
         webSettings.setJavaScriptEnabled(true);
         aboutPage.loadUrl(getString(R.string.aboutUrl));
-        aboutPage.setWebViewClient(new WebViewClient(){
-            @Override
-            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-                
-                handler.proceed();
-            }
-        });
+        aboutPage.setWebViewClient(new WebViewClient());
 
 
     }
